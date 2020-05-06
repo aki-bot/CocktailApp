@@ -1,5 +1,5 @@
 @extends('layouts.front')
-@section('title', 'SaludosCocktail')
+@section('title', 'AlegríaCocktails')
 @section('content')
 {{--見えてる画面の高さを計算して... 「vh」--}}
 <div style="background-image:url('/img/drinks-2578446_1920.jpg'); width:100%; height:100vh; background-size:100%;">
