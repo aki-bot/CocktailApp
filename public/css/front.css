@@ -73,3 +73,7 @@ body {
   text-align: center;
 }
 
+.dropdown-toggle {
+  padding: 5px;
+}
+

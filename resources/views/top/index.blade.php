@@ -13,14 +13,14 @@
        <div class="container">
     <div class="middle-container">
         <div class="middle-wrapper">
-            <h1 class="middle-wrapper center title pt-xl-5">
+            {{-- <h1 class="middle-wrapper center title pt-xl-5">
                 〜Have a better　time with a cocktail〜<br>
                 「飲む楽しみ」と「見る楽しみ」で存分に味わう
-            </h1>
+            </h1> --}}
             <div class="left-detail-content">
-                <h3 class="mx-auto pt-xl-5" style="width: 200px; background:linear-gradient(transparent 70%, #FFFF00 0%);">SaludosCocktail</h3>
+                <h3 class="mx-auto pt-xl-5" style="width: 200px; background:linear-gradient(transparent 70%, #FFFF00 0%);">AlegríaCocktails</h3>
                 <p class="mx-auto" style="width: 350px">
-                    SaludosCocktailは、<br>
+                    AlegríaCocktailsは、<br>
                     仲間と楽しむ時間も、特別な人と過ごす大切な時間も<br>
                     その時に合った最高のカクテルを見つけることができます<br>
                     スタンダードからオリジナルまでカクテルを幅広く楽しんで下さい<br>

@@ -28,24 +28,25 @@
     {{--画面上部に表示するナビゲーションバーのこと--}}
     <nav class="navbar navbar-expand-md navbar-dark navbar-laravel">
     <div class="container">
-        {{--a hrefでリンク先の作成--}}{{--url('パス')はそのままURLを返すと言っている--}}
+        {{-- a hrefでリンク先の作成 --}}
+        {{--url('パス')はそのままURLを返すと言っている --}}
+        {{--configフォルダにあるapp.phpの中にあるnameにアクセスすると言っている/基本的にはアプリケーションの名前Laravelが格納されている--}}
         {{-- <a class="navbar-brand" href="{{ url('/') }}">
-            {{--configフォルダにあるapp.phpの中にあるnameにアクセスすると言っている/基本的にはアプリケーションの名前Laravelが格納されている--}}
-            {{-- {{ config('app.name', 'Laravel') }}
-        </a> --}} 
+            {{-- {{ config('app.name', 'Laravel') }}</a>   --}}
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <h1 class="header-title">SaludosCocktail</h1>
+                <h1 class="header-title">AlegríaCocktails</h1>
                 @guest
-                <a href="{{ action('TopController@index') }}" class="header-menu">SaludosCocktailについて</a>
+                <a href="{{ action('TopController@index') }}" class="header-menu">AlegríaCocktailsについて</a>
                 <a href="{{ action('DrinkController@index')}}" class="header-menu">カクテルを探す</a>
                 <a href="{{ action('ReviewController@index')}}" class="header-menu">みんなの感想</a>
                 @else
-                <a href="{{ action('TopController@index') }}" class="header-menu">SaludosCocktailについて</a>
+                <a href="{{ action('TopController@index') }}" class="header-menu">AlegríaCocktailsについて</a>
                 <a href="{{ action('DrinkController@index')}}" class="header-menu">カクテルを探す</a>
                 <a href="{{ action('ReviewController@index')}}" class="header-menu">みんなの感想</a>
                 <a href="{{ action('RequestController@index')}}" class="header-menu">リクエスト</a>
@@ -57,7 +58,8 @@
             <!-- Authentication Links -->
             {{-- ログインしていなかったらログイン画面へのリンクを表示 --}}
             @guest
-            <li><a class="dropdown-toggle" href="{{ route('login') }}" style="color:black;">{{ __('Login') }}</a></li>
+            <li><a class="dropdown-toggle" href="{{ route('register') }}" style="color:black;">{{ __('新規登録') }}</a></li>
+            <li><a class="dropdown-toggle" href="{{ route('login') }}" style="color:black;">{{ __('ログイン') }}</a></li>
         {{-- ログインしていたらユーザー名とログアウトボタンを表示 --}}
         @else
             <li class="nav-item dropdown">
@@ -93,7 +95,7 @@
     </div>
     <div class="footer">
         <p>
-            ©︎ 2020 SaludosCocktail
+            ©︎ 2020 AlegríaCocktails
         </p>
     </div>
 </body>

@@ -31,6 +31,7 @@ Route::group(['prefix' =>'admin','middleware' => 'auth'],function(){
     Route::post('drink/edit', 'Admin\DrinkController@update');
     //削除を押したら削除できるようにしている
     Route::get('drink/delete', 'Admin\DrinkController@delete');
+    
     //ユーザーがしてくれたレビューに対してのページ
     Route::get('review','Admin\ReviewController@create');
     Route::get('review/delete', 'Admin\ReviewController@delete');
